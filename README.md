@@ -34,26 +34,13 @@ Here we assume a discrete set of eigenvalues $\lambda=\mu_\lambda+i\omega_\lambd
 where the smallest eigenvalue is $\lambda_0$, corresponds to the stationary state, which we denote $P_0(\textbf{x})$ and assume to be unique.
 
 
+## How to use the code?
 
-
-Our code is efficient as it relies on
-- a diagonalisation of the linear system yielding the coeficcients $K_{\alpha, m-\alpha}(\theta)$ by means of the Floquet Normal Form
-- automatic differentiation techniques
-
-## How to use it?
-
-Our code considers a 3D neuron model (see Eq. 59) but it is easy to adapt for any system of interest. To that end, open 'obtainKs.py' and
-- Define its vectror field equations at "myVectorField" 
-- Define the jacobian matrix at "myJacobianMatrix"
-- introduce the period, $T$
-- introduce an initial condition on the limit cycle, $x_0$
-- write the automatic differentiation expression for your system (see Appendix B for more details)
-
-There are extra parameters $b_1, b_2$ controlling the norm of $K_{10}$ and $K_{01}$ (see Remark 3.2 in the manuscript for more details)
+The code considers a 2D stochastic SDE and a rectangular domain. Whereas the library "kolmogorovTools.py" contains the functions discretising the terms in $\mathcal{L}^\dagger$ the script "diagonalizeKolmogorov.py" builds the operator for the model of interest and provides the set of eigenfunctions and eigenvalues for ($\mathcal{L}$) and ($\mathcal{L}^\dagger$).
+- Make sure both functions are at the same directory  
+- Open X, define your functions f_x (x) and f_y (x), then choose the domain you aim to discretise and how many points you want in each direction (params N,M)
+- Then, execute it and enjoy your eigenfunction
 
 ## What produces?
 
-By running the code you will generate three files "kx.dat", "ky.dat" and "kz.dat". Each file will have as many rows as monomials are generated and as many columns as points used to discretise $\theta$. Monomials are stored following the sum
-$$\sum_{m=0}^{L} \sum_{\alpha=0}^{m} K_{\alpha, m-\alpha}(\theta)$$
-
-Note the code prints the maxError of each monomial (the error is computed via equation 48 in the manuscript)
+By running the code you will generate the files containing the eigenvectors and eigenvalues of the forward and backward operators. The eigenvectors you obtain correspond to the eigenfunctions exaluated on the chosen grid. As the eigenvalues and eigenfunctions are computed via the routine X, we refer to X for information about how they are stored.
