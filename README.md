@@ -36,10 +36,13 @@ where the smallest eigenvalue is $\lambda_0$, corresponds to the stationary stat
 
 ## How to use the code?
 
-The code considers a 2D stochastic SDE and a rectangular domain. Whereas the library "kolmogorovTools.py" contains the functions discretising the terms in $\mathcal{L}^\dagger$ the script "diagonalizeKolmogorov.py" builds the operator for the model of interest and provides the set of eigenfunctions and eigenvalues for ($\mathcal{L}$) and ($\mathcal{L}^\dagger$).
+The code considers a 2D stochastic SDE and a rectangular domain. Whereas the library "kolmogorovTools.py" contains the functions computing the terms composing $\mathcal{L}^\dagger$, the script "diagonalizeKolmogorov.py" builds the operator for the model of interest and provides the set of eigenfunctions and eigenvalues for ($\mathcal{L}$) and ($\mathcal{L}^\dagger$).
 - Make sure both functions are at the same directory  
-- Open X, define your functions f_x (x) and f_y (x), then choose the domain you aim to discretise and how many points you want in each direction (params N,M)
+- Open "diagonalizeKolmogorov.py", define your functions f_x (x) and f_y (x), then choose the domain you aim to discretise and how many points you want in each direction (params N,M)
 - Then, execute it and enjoy your eigenfunction
+- As tip: chose a domain large enough so the probability of trajectory reaching the boundaries is low.
+- The matrices in the code are written following sparse scipy libraries. This way one can consider big number of points to discretise without running out of memory.
+- How many points to use when discrtising? Well, try and error will teach you to find a good compromise :)
 
 ## What produces?
 
