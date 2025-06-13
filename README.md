@@ -53,5 +53,5 @@ Whereas the library "kolmogorovTools.py" contains the functions computing the te
 
 ## What produces?
 
-By running the code you will generate the files containing the eigenvectors and eigenvalues of the forward and backward operators. The eigenvectors you obtain correspond to the eigenfunctions exaluated on the chosen grid. As the eigenvalues and eigenfunctions are computed via the scipy routine "eigs", we refer to [[scipy.eigs documentation]](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.eigs.html) for information about how they are stored.
+By running the code you will generate the files containing the eigenvectors and eigenvalues of the constructed matricial representation of the forward and backward operators. The eigenvectors you obtain correspond to the eigenfunctions exaluated on the chosen grid. As the eigenvalues and eigenfunctions are computed via the scipy routine "eigs", we refer to [[scipy.eigs documentation]](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.eigs.html) for information about how they are stored.
 
