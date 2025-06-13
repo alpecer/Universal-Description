@@ -48,7 +48,7 @@ Whereas the library "kolmogorovTools.py" contains the functions computing the te
 - Then, execute it and enjoy your eigenfunctions :)
 - As tip: chose a domain large enough so the probability of trajectory reaching the boundaries is low.
 - The matrices in the code are written following sparse SciPy libraries. This way one can consider big number of points to discretise without running out of memory.
-- How many points to use when discrtising? Well, try and error will teach you to find a good compromise (whereas few points may generate weird results, choosing too many points may cause the code to be too slow)
+- How many points to use when discrtising? Well, try and error will teach you to find a good compromise (whereas few points may generate weird results, choosing too many points may cause the code to be accurate enough but too slow)
 - We also encourage the reader to read Section 5 in the SI, where complementary details about the procedure can be found.
 
 ## What produces?
