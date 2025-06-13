@@ -7,16 +7,23 @@ by A. Pérez-Cervera, B.Gutkin, P.J.Thomas and B. Lindner
 
 ## Theoretical background
 
-Next we give a short theoretical reminder. For the full details, please the the paper and its [[Suplementary Information]](https://www.pnas.org/doi/suppl/10.1073/pnas.2303222120/suppl_file/pnas.2303222120.sapp.pdf)
-$$\dot{x} = X(x), \qquad x \in \mathbb{R}^{d}, \qquad d \geq 2 ,$$
-with an underlying limit cycle, we look for the change of variables $x=K(\theta, \sigma)$ such that the dynamics express simply as
-```math
-\dot{\theta} = \frac{1}{T}, \quad \quad \quad  \dot{\sigma} = \Lambda \cdot \sigma, \quad \quad \text{with} \quad \quad \Lambda = 
-\begin{pmatrix}
-\lambda_1 & & \\
-& \ddots & \\
-& & \lambda_{d-1}  
-\end{pmatrix}
+We assume our stochastic oscillator can be described by a Langevin equation
+
+$$\frac{d\textbf{x}}{dt}=\textbf{f}(\textbf{x}) + \textbf{g}(\textbf{x})\xi(t), \qquad \textbf{x} \in \mathbb{R},$$
+
+where $\textbf{f}$ is a is an n-dimensional vector, $\textbf{g}$ is an $n \times n$ matrix, and $\xi$
+is $n$-dimensional white noise with uncorrelated components, so it satisfies, $\left\langle \xi_i(t)\xi_j(t') \right\rangle  = \delta(t-t')\delta_{i,j}$.
+
+The process described by the previous Langevin equation is a $n$-dimensional Markov process, that is uniquely determined by the transition probability density $P(\textbf{x},t | \textbf{x}_0,s)$ (for $t>s$). This central statistics satisfies both the forward Kolmogorov (or ``Fokker-Planck'') equation 
+
+$$\frac{\partial P}{\partial t}=\mathcal{L}[P]=-\nabla_\textbf{x}\cdot\left( \textbf{f}(\textbf{x}) P \right)+ \sum_{i,j}\frac{\partial^2}{\partial x_i x_j}\left(D_{ij}(\textbf{x})P\right), $$
+
+$where ~ D=\frac12 gg^\intercal$. 
+
+Here the functional $\mathcal{L}^\dagger$ acts with respect to the $\textbf{x}$ coordinates. $P(\textbf{x},t | \textbf{x}_0,s)$  also obeys the backward Kolmogorov equation 
+$$-\frac{\partial P}{\partial s} = \mathcal{L}^\dagger[P]=\textbf{f}(\textbf{x}_0)\cdot\nabla_{\textbf{x}_0}\!\left(P \right)+\sum_{i,j}D_{ij}(\textbf{x}_0)\frac{\partial^2 P}{\partial x_{0,i} x_{0,j}},$$
+where the operator $\mathcal{L}^\dagger$ acts with respect to the $\textbf{x}_0$ coordinates.
+
 ```
 with $T$ the period of the limit cycle and $\lambda_i$ its correspondent Floquet exponents.
 
