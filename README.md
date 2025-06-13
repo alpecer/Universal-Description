@@ -44,7 +44,7 @@ Next, we explain how to modify it in order to obtain the discretisation of the K
 
 Whereas the library "kolmogorovTools.py" contains the functions computing the terms composing $\mathcal{L}^\dagger$, the script "diagonalizeKolmogorov.py" builds the operator for the model of interest and provides the set of eigenfunctions and eigenvalues for $\mathcal{L}$ and $\mathcal{L}^\dagger$. That is why, we just need to modify "diagonalizeKolmogorov.py".
 - Make sure both functions are at the same directory  
-- Open "diagonalizeKolmogorov.py", define your functions $f_x (x,y)$ and $f_y (x,y)$, then choose the domain you aim to discretise and how many points you want in each direction (params N,M)
+- Open "diagonalizeKolmogorov.py", edit the functions $f_x (x,y)$ and $f_y (x,y)$ and its associated parameters. Then, choose the domain you aim to discretise and how many points you want in each direction (params N,M)
 - Then, execute it and enjoy your eigenfunctions :)
 - As tip: chose a domain large enough so the probability of trajectory reaching the boundaries is low.
 - The matrices in the code are written following sparse scipy libraries. This way one can consider big number of points to discretise without running out of memory.
