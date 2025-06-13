@@ -1,13 +1,13 @@
 # Universal-Description
 
-**"Global phase-amplitude description of oscillatory dynamics via the parameterization method"** [[PDF]](https://arxiv.org/pdf/2004.03647.pdf)
+**"A Universal Description of Stochastic Oscillators "** [[PDF]](https://www.pnas.org/doi/reader/10.1073/pnas.2303222120)
 
-at [[Chaos]](https://aip.scitation.org/doi/abs/10.1063/5.0010149)
-by A. Pérez-Cervera, Tere M.Seara and Gemma Huguet from Universitat Politècnica de Catalunya
+at [[PNAS]](https://www.pnas.org/doi/abs/10.1073/pnas.2303222120)
+by A. Pérez-Cervera, B.Gutkin, P.J.Thomas and B. Lindner
 
 ## Theoretical background
 
-Having the following system
+Next we give a short theoretical reminder. For the full details, please the the paper and its [[Suplementary Information]](https://www.pnas.org/doi/suppl/10.1073/pnas.2303222120/suppl_file/pnas.2303222120.sapp.pdf)
 $$\dot{x} = X(x), \qquad x \in \mathbb{R}^{d}, \qquad d \geq 2 ,$$
 with an underlying limit cycle, we look for the change of variables $x=K(\theta, \sigma)$ such that the dynamics express simply as
 ```math
