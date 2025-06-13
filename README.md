@@ -7,6 +7,8 @@ by A. Pérez-Cervera, B.Gutkin, P.J.Thomas and B. Lindner
 
 ## Theoretical background
 
+Next, we briefly summarize few details of the theoretical background. For the complete information, please, check our paper and its [[Supplemental Information]](https://www.pnas.org/doi/suppl/10.1073/pnas.2303222120/suppl_file/pnas.2303222120.sapp.pdf)
+
 We assume our stochastic oscillator can be described by a Langevin equation
 
 $$\frac{d\textbf{x}}{dt}=\textbf{f}(\textbf{x}) + \textbf{g}(\textbf{x})\xi(t), \qquad \textbf{x} \in \mathbb{R},$$
