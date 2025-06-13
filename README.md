@@ -47,7 +47,7 @@ Whereas the library "kolmogorovTools.py" contains the functions computing the te
 - Open "diagonalizeKolmogorov.py", edit the functions $f_x (x,y)$ and $f_y (x,y)$ and its associated parameters. Then, choose the domain you aim to discretise and how many points you want in each direction (params N,M)
 - Then, execute it and enjoy your eigenfunctions :)
 - As tip: chose a domain large enough so the probability of trajectory reaching the boundaries is low.
-- The matrices in the code are written following sparse scipy libraries. This way one can consider big number of points to discretise without running out of memory.
+- The matrices in the code are written following sparse SciPy libraries. This way one can consider big number of points to discretise without running out of memory.
 - How many points to use when discrtising? Well, try and error will teach you to find a good compromise (whereas few points may generate weird results, choosing too many points may cause the code to be too slow)
 - We also encourage the reader to read Section 5 in the SI, where complementary details about the procedure can be found.
 
