@@ -38,7 +38,9 @@ Here we assume a discrete set of eigenvalues $\lambda=\mu_\lambda+i\omega_\lambd
 
 ## How to use the code?
 
-The code considers a 2D stochastic SDE and a rectangular domain. In particular, it should generate results for the "noisy Stuart-Landau" model in Eq. (11) in the main text with parameters as in Fig. 1 in the main text.
+The attached code is ready to generate the spectral decomposition of the "noisy Stuart-Landau" model in Eq. (11) in the main text with parameters as in Fig. 1 in the main text. 
+
+Next, we explain how to modify it in order to obtain the discretisation of the Kolmogorov operators assocaited to a different planar SDE:
 
 Whereas the library "kolmogorovTools.py" contains the functions computing the terms composing $\mathcal{L}^\dagger$, the script "diagonalizeKolmogorov.py" builds the operator for the model of interest and provides the set of eigenfunctions and eigenvalues for $\mathcal{L}$ and $\mathcal{L}^\dagger$.
 - Make sure both functions are at the same directory  
