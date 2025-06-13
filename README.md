@@ -31,9 +31,9 @@ where the operator $\mathcal{L}^\dagger$ acts with respect to the $\textbf{y}$ c
 
 Here we assume a discrete set of eigenvalues $\lambda=\mu_\lambda+i\omega_\lambda$ with corresponding forward ($\mathcal{L}$) and backwards ($\mathcal{L}^\dagger$) eigenfunctions
 ```math
-\mathcal{L}[P_\lambda]=\lambda P_\lambda,\qquad\mathcal{L}^\dagger [Q^*_{\lambda}]=\lambda Q^*_{\lambda},
+\mathcal{L}[P_\lambda]=\lambda P_\lambda,\qquad\mathcal{L}^\dagger [Q^*_{\lambda}]=\lambda Q^*_{\lambda}.
 ```
-where the smallest eigenvalue is $\lambda_0$, corresponds to the stationary state, which we denote $P_0(\textbf{x})$ and assume to be unique.
+
 
 
 ## How to use the code?
