@@ -21,7 +21,9 @@ $$\frac{\partial P}{\partial t}=\mathcal{L}[P]=-\nabla_\textbf{x}\cdot\left( \te
 $where ~ D=\frac12 gg^\intercal$. 
 
 Here the functional $\mathcal{L}^\dagger$ acts with respect to the $\textbf{x}$ coordinates. $P(\textbf{x},t | \textbf{x}_0,s)$  also obeys the backward Kolmogorov equation 
-$$-\frac{\partial P}{\partial s} = \mathcal{L}^\dagger[P]=\textbf{f}(\textbf{x}_0)\cdot\nabla_{\textbf{x}_0}\!\left(P \right)+\sum_{i,j}D_{ij}(\textbf{x}_0)\frac{\partial^2 P}{\partial x_{0,i} x_{0,j}},$$
+
+$$-\frac{\partial P}{\partial s} = \mathcal{L}^\dagger [P]=\textbf{f}(\textbf{x})\nabla_\textbf{x_0} + D_{ij}$$
+
 where the operator $\mathcal{L}^\dagger$ acts with respect to the $\textbf{x}_0$ coordinates.
 
 ```
