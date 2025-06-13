@@ -42,8 +42,9 @@ The code considers a 2D stochastic SDE and a rectangular domain. Whereas the lib
 - Then, execute it and enjoy your eigenfunction
 - As tip: chose a domain large enough so the probability of trajectory reaching the boundaries is low.
 - The matrices in the code are written following sparse scipy libraries. This way one can consider big number of points to discretise without running out of memory.
-- How many points to use when discrtising? Well, try and error will teach you to find a good compromise :)
+- How many points to use when discrtising? Well, try and error will teach you to find a good compromise (whereas few points may generate weird results, choosing too many points may cause the code to be too slow :)
 
 ## What produces?
 
-By running the code you will generate the files containing the eigenvectors and eigenvalues of the forward and backward operators. The eigenvectors you obtain correspond to the eigenfunctions exaluated on the chosen grid. As the eigenvalues and eigenfunctions are computed via the routine X, we refer to X for information about how they are stored.
+By running the code you will generate the files containing the eigenvectors and eigenvalues of the forward and backward operators. The eigenvectors you obtain correspond to the eigenfunctions exaluated on the chosen grid. As the eigenvalues and eigenfunctions are computed via the scipy routine "eigs", we refer to [[scipy.eigs documentation]](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.eigs.html) for information about how they are stored.
+
